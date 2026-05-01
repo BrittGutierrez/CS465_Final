@@ -6,37 +6,97 @@ public class TV : MonoBehaviour
 
 {
 
-    public VideoPlayer videoPlayer;     // this is the video on the screen
+    public VideoPlayer videoPlayer;     // video that plays on the tv screen
 
-    public Renderer screenRenderer;     // the actual TV screen (the quad)
+    public Renderer screenRenderer;     // the tv screen
 
-    public AudioSource startupSound;    // the startup sound for the TV
+    public AudioSource startupSound;    // sound when the tv turns on
  
-    public Material offMaterial;        // black screen when TV is off
+    public Material offMaterial;        // black screen
 
-    public Material videoMaterial;      // the material that shows the video
+    public Material videoMaterial;      // screen with the video
  
-    public float delayBeforeVideo = 1f; // how long it waits before turning on
+    public float delayBeforeVideo = 1f; // wait before the video starts
+ 
+    private bool isOn = false;          // checks if the tv is on or off
+ 
+    public void ToggleTV()
+
+    {
+
+        // if the tv is already on, turn it off
+
+        if (isOn)
+
+        {
+
+            TurnOffTV();
+
+        }
+
+        // if the tv is off, turn it on
+
+        else
+
+        {
+
+            TurnOnTV();
+
+        }
+
+    }
  
     public void TurnOnTV()
 
     {
 
-        // play the startup sound when you press the button
-
+        isOn = true;
+ 
+        // play the tv sound
+ 
         if (startupSound != null)
 
             startupSound.Play();
  
-        // reset the video and make the screen black first
+        // stop the video first so it starts over
 
-        videoPlayer.Stop();
+        if (videoPlayer != null)
 
-        screenRenderer.material = offMaterial;
+            videoPlayer.Stop();
  
-        // wait a second, then start the video
+        // make the screen black first
+
+        if (screenRenderer != null)
+
+            screenRenderer.material = offMaterial;
+ 
+        // wait a second then play the video
 
         Invoke(nameof(PlayVideo), delayBeforeVideo);
+
+    }
+ 
+    public void TurnOffTV()
+
+    {
+
+        isOn = false;
+ 
+        // stop the delayed video from turning on
+
+        CancelInvoke(nameof(PlayVideo));
+ 
+        // stop the video
+
+        if (videoPlayer != null)
+
+            videoPlayer.Stop();
+ 
+        // make the screen black
+
+        if (screenRenderer != null)
+
+            screenRenderer.material = offMaterial;
 
     }
  
@@ -44,11 +104,23 @@ public class TV : MonoBehaviour
 
     {
 
-        // switch the screen back to the video and start playing
+        // if the tv was turned off, don't play the video
 
-        screenRenderer.material = videoMaterial;
+        if (!isOn)
 
-        videoPlayer.Play();
+            return;
+ 
+        // show the video on the screen
+
+        if (screenRenderer != null)
+
+            screenRenderer.material = videoMaterial;
+ 
+        // play the video
+
+        if (videoPlayer != null)
+
+            videoPlayer.Play();
 
     }
 

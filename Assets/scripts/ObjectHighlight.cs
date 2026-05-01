@@ -1,68 +1,98 @@
 using UnityEngine;
+
 using UnityEngine.XR.Interaction.Toolkit;
  
-public class BedSit : MonoBehaviour
+public class ObjectHighlight : MonoBehaviour
+
 {
-    public Transform xrOrigin;      // this is the player rig
-    public Transform sitPoint;      // where we want the player to sit
- 
-    public float highlightStrength = 1.3f;
+
+    public float highlightStrength = 1.5f; // how bright it gets
  
     private Renderer[] renderers;
+
     private Color[][] originalColors;
  
     void Start()
+
     {
+
         renderers = GetComponentsInChildren<Renderer>();
+
         originalColors = new Color[renderers.Length][];
  
         for (int i = 0; i < renderers.Length; i++)
+
         {
+
             Material[] mats = renderers[i].materials;
+
             originalColors[i] = new Color[mats.Length];
  
             for (int j = 0; j < mats.Length; j++)
+
             {
+
                 if (mats[j].HasProperty("_BaseColor"))
+
                     originalColors[i][j] = mats[j].color;
+
             }
+
         }
+
     }
  
-    public void OnHoverEnter(HoverEnterEventArgs args)
+    public void HighlightObject(HoverEnterEventArgs args)
+
     {
-        // make the bed brighter when we point at it
+
+        // make the object brighter when pointing at it
+
         for (int i = 0; i < renderers.Length; i++)
+
         {
+
             Material[] mats = renderers[i].materials;
  
             for (int j = 0; j < mats.Length; j++)
+
             {
+
                 if (mats[j].HasProperty("_BaseColor"))
+
                     mats[j].color = originalColors[i][j] * highlightStrength;
+
             }
+
         }
+
     }
  
-    public void OnHoverExit(HoverExitEventArgs args)
+    public void UnhighlightObject(HoverExitEventArgs args)
+
     {
-        // reset the bed color when we stop pointing at it
+
+        // change it back when not pointing at it
+
         for (int i = 0; i < renderers.Length; i++)
+
         {
+
             Material[] mats = renderers[i].materials;
  
             for (int j = 0; j < mats.Length; j++)
+
             {
+
                 if (mats[j].HasProperty("_BaseColor"))
+
                     mats[j].color = originalColors[i][j];
+
             }
+
         }
+
     }
- 
-    public void Sit()
-    {
-        // move the player to the sit point when we press trigger
-        xrOrigin.position = sitPoint.position;
-        xrOrigin.rotation = sitPoint.rotation;
-    }
+
 }
+ 
