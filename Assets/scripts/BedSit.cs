@@ -31,7 +31,7 @@ public class BedSit : MonoBehaviour
  
     public void OnHoverEnter(HoverEnterEventArgs args)
     {
-        // make the bed brighter when we point at it
+        //highlights the bed when we hover with the controllers
         for (int i = 0; i < renderers.Length; i++)
         {
             Material[] mats = renderers[i].materials;
@@ -46,7 +46,7 @@ public class BedSit : MonoBehaviour
  
     public void OnHoverExit(HoverExitEventArgs args)
     {
-        // reset the bed color when we stop pointing at it
+        //turns highlight off when we stop hovering over bed
         for (int i = 0; i < renderers.Length; i++)
         {
             Material[] mats = renderers[i].materials;
@@ -61,7 +61,7 @@ public class BedSit : MonoBehaviour
  
     public void Sit()
     {
-        // move the player to the sit point when we press trigger
+        //moves you to the point on the bed when you press the triggers
         xrOrigin.position = sitPoint.position;
         xrOrigin.rotation = sitPoint.rotation;
     }

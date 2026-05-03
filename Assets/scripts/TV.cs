@@ -24,7 +24,7 @@ public class TV : MonoBehaviour
 
     {
 
-        // if the tv is already on, turn it off
+        // if the tv is already on then turn it off
 
         if (isOn)
 
@@ -34,7 +34,7 @@ public class TV : MonoBehaviour
 
         }
 
-        // if the tv is off, turn it on
+        // if the tv is off then turn it on
 
         else
 
