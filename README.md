@@ -1,4 +1,4 @@
-# VR_Nostalgia_Project
+# VR Nostalgia Project
 
 ## Description
 
