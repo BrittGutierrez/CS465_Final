@@ -1,4 +1,7 @@
-# VR Nostalgia Project
+# Studdy_Buddy
+
+GITHUB LINK: 
+https://github.com/BrittGutierrez/CS465_Final.git
 
 ## Description
 
@@ -100,6 +103,23 @@ Checkpoint 2: https://youtu.be/3L6y5B2tj5c
 Checkpoint 1: https://youtu.be/xcYaRdA9RnQ
 Checkpoint 2: https://youtu.be/PLn6NMdVk-I
 
+## Final Videos
+
+FULL PRESENTATION VIDEO:
+https://youtu.be/8r97qaMHg8c
+Downloadable Link:
+https://colostate-my.sharepoint.com/:v:/g/personal/c832892390_colostate_edu/IQDC8uhyW9e-T63Q2JAovjLWATaP-SbSahJ3_gFBOKWCaY0?e=yZknEI
+
+PROGRAMMING VIDEO: 
+https://youtu.be/w8jGoJjnh1M
+Downloadable Link: 
+https://colostate-my.sharepoint.com/:v:/g/personal/c832892390_colostate_edu/IQB7WUU16xR1TZRmOXalQJtCATgu7IR1_Rwuiq2T-QaS4SQ?e=2SxT36
+
+SHORT PRESENTATION VIDEO:
+https://youtu.be/fidFh6hlVz8
+Downloadable Link: 
+https://colostate-my.sharepoint.com/:v:/g/personal/c832892390_colostate_edu/IQDGA9vjRXkhRpCL9lyEZW3UAS6luIPpDsAx1bc4CHRO18I?e=fl7Gbh
+
 ## Paper
 
 ### Overleaf
@@ -107,9 +127,10 @@ Checkpoint1:
 Checkpoint_1_CS465.pdf  
 https://www.overleaf.com/read/xcbwvtxyhvbt#15329f
 
-Checkpoint2: 
-[ADD HERE WHEN WE UPDATE!]
-
+Final Paper: 
+https://www.overleaf.com/read/xcbwvtxyhvbt#15329f
+Downloadable PDF:
+https://colostate-my.sharepoint.com/:v:/g/personal/c832892390_colostate_edu/IQDGA9vjRXkhRpCL9lyEZW3UAS6luIPpDsAx1bc4CHRO18I?e=fl7Gbh
 
 ## How it works
 
