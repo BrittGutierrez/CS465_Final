@@ -1,10 +1,30 @@
-Project Video: 
-Presentation Video
+SP2026_CS_465
+
+STUDY_BUDDY
+
+Members:
+Brittany Gutierrez
+Nathan Chapman
+
+FULL PRESENTATION VIDEO:
 https://youtu.be/8r97qaMHg8c
-Programming Video
+Downloadable Link:
+https://colostate-my.sharepoint.com/:v:/g/personal/c832892390_colostate_edu/IQDC8uhyW9e-T63Q2JAovjLWATaP-SbSahJ3_gFBOKWCaY0?e=yZknEI
+
+PROGRAMMING VIDEO: 
 https://youtu.be/w8jGoJjnh1M
-5 Minute Slide Show
+Downloadable Link: 
+https://colostate-my.sharepoint.com/:v:/g/personal/c832892390_colostate_edu/IQB7WUU16xR1TZRmOXalQJtCATgu7IR1_Rwuiq2T-QaS4SQ?e=2SxT36
+
+SHORT PRESENTATION VIDEO:
 https://youtu.be/fidFh6hlVz8
+Downloadable Link: 
+https://colostate-my.sharepoint.com/:v:/g/personal/c832892390_colostate_edu/IQDGA9vjRXkhRpCL9lyEZW3UAS6luIPpDsAx1bc4CHRO18I?e=fl7Gbh
+
+OVERLEAF:
+https://www.overleaf.com/read/xcbwvtxyhvbt#15329f
+Downloadable PDF:
+https://colostate-my.sharepoint.com/:v:/g/personal/c832892390_colostate_edu/IQDGA9vjRXkhRpCL9lyEZW3UAS6luIPpDsAx1bc4CHRO18I?e=fl7Gbh
 
 How To Use Our App:
 I will briefly explain how to interact with the room. You can look around the bedroom, move around using the right-hand joystick, pick up certain objects, sit in different areas, and trigger sounds or visual interactions.
@@ -13,5 +33,6 @@ The buttons on the TV and radio do not currently highlight, but they are still i
 There is no specific goal you need to complete. The purpose is to explore the room, interact with anything that stands out to you, and pay attention to how the environment makes you feel.
 
 
-Overleaf:
-https://www.overleaf.com/read/xcbwvtxyhvbt#15329f
+
+
+
