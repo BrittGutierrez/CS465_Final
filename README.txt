@@ -14,5 +14,4 @@ There is no specific goal you need to complete. The purpose is to explore the ro
 
 
 Overleaf:
-(Checkpoint 1, not updated)
 https://www.overleaf.com/read/xcbwvtxyhvbt#15329f
